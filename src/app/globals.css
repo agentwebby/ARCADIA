@@ -3,6 +3,14 @@
 :root {
   --background: #171717;
 }
+
+
+.center-container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100vh;           /* or any height you want */
+}
 /*
 @theme inline {
   --color-background: var(--background);

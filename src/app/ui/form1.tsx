@@ -1,3 +1,4 @@
+"use client"
 import Form from 'next/form'
 import SubmitButton from './submitButton'
 export default function Form1() {
@@ -6,6 +7,7 @@ export default function Form1() {
       {/* On submission, the input value will be appended to
           the URL, e.g. /search?query=abc */}
       <input name="query" />
+      <br/>
       <SubmitButton></SubmitButton>
     </Form>
   )

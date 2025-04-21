@@ -8,26 +8,19 @@ import SubmitButton from "./ui/submitButton";
 export default function Home() {
   
   return (
-    <div 
-      style={{justifyContent:"center"}}>
-    <div
-      style={{justifyContent:"center"}}>
-    <Image
-      src="/ui/img1.png"
-      width={250}
-      height={250}
-      alt="Arcadia"
-      priority
-      quality={100}
-    />
-    <div
-      style={{justifyContent:"center"}}>
-    <Form1></Form1>
-    </div>
-
-    </div>
-
-
+    <div className="centered-container">
+      <Image
+        src="/ui/img1.png"
+        width={250}
+        height={250}
+        alt="Arcadia"
+        priority
+        quality={100}
+        className="centered-container"
+      />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Form1 />
+      </Suspense>
     </div>
       
 

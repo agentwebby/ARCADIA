@@ -19,7 +19,7 @@ export default function Home() {
         className="centered-container"
       />
       <Suspense fallback={<div>Loading...</div>}>
-        <Form1 />
+        <Form1/>
       </Suspense>
     </div>
       

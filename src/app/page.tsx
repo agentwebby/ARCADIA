@@ -1,12 +1,10 @@
 import Image from "next/image";
-import form1 from "./ui/form1"
 import { Suspense } from "react";
-import Form1 from "./ui/form1";
-import SubmitButton from "./ui/submitButton";
+import UploadForm from "./ui/uploadForm";
 
 
 export default function Home() {
-  
+
   return (
     <div className="centered-container">
       <Image
@@ -16,15 +14,12 @@ export default function Home() {
         alt="Arcadia"
         priority
         quality={100}
-        className="centered-container"
+        className="centered-container centered-image"
       />
       <Suspense fallback={<div>Loading...</div>}>
-        <Form1 />
+        <UploadForm />
       </Suspense>
     </div>
-      
-
-    
   );
 }
 

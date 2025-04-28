@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://api.example.com",
+    "url": {
+        "upload_file": "/upload/file"
+    }
+}

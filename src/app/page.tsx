@@ -17,7 +17,7 @@ export default function Home() {
         className="centered-container centered-image"
       />
       <Suspense fallback={<div>Loading...</div>}>
-        <UploadForm />
+        <UploadForm  />
       </Suspense>
     </div>
   );
